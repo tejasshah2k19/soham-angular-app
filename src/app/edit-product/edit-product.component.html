@@ -1,0 +1,10 @@
+<p>Update Product</p>
+
+<input type="hidden" [(ngModel)]="product.productId" />
+
+Product Name : <input type="text" [(ngModel)]="product.productName" /><br>
+
+Product Price: <input type="text" [(ngModel)]="product.productPrice" /><br>
+
+<input type="button" value="Update Product" (click)="updateProduct()" /> 
+

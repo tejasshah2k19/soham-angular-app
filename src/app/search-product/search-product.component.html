@@ -1,0 +1,23 @@
+Search : <input type="text" [(ngModel)]="search"  > <input type="button"  value="Search" (click)="searchData()"/>
+
+<input type="button" value="Sort By Product Name" (click)="sortByName()"/>
+
+<input type="button" value="Sort By Product Price" (click)="sortByPrice()" />
+
+<br><BR>
+    
+<table border="1">
+    <tr>
+        <th>ProductId</th>
+        <th>ProductName</th>
+        <th>ProductPrice</th>
+        <th>Action</th>
+    </tr>
+    <tr *ngFor="let p of products">
+        <td>{{p.productId}}</td>
+        <td>{{p.productName}}</td>
+        <td>{{p.productPrice}}</td>
+        <td><a routerLink="/editproduct/{{p.productId}}">Edit</a></td>
+    </tr>
+
+</table>
