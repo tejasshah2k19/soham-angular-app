@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SignupComponent } from './signup/signup.component';
@@ -12,6 +12,7 @@ import { AddProductComponent } from './add-product/add-product.component';
 import { ListProductComponent } from './list-product/list-product.component';
 import { EditProductComponent } from './edit-product/edit-product.component';
 import { SearchProductComponent } from './search-product/search-product.component';
+import { ReactiveFormSignupComponent } from './reactive-form-signup/reactive-form-signup.component';
 
 @NgModule({
   declarations: [
@@ -22,13 +23,15 @@ import { SearchProductComponent } from './search-product/search-product.componen
     AddProductComponent,
     ListProductComponent,
     EditProductComponent,
-    SearchProductComponent
+    SearchProductComponent,
+    ReactiveFormSignupComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    AlifeFileToBase64Module    
+    AlifeFileToBase64Module,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
