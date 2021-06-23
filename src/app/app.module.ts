@@ -13,7 +13,8 @@ import { ListProductComponent } from './list-product/list-product.component';
 import { EditProductComponent } from './edit-product/edit-product.component';
 import { SearchProductComponent } from './search-product/search-product.component';
 import { ReactiveFormSignupComponent } from './reactive-form-signup/reactive-form-signup.component';
-
+import { AddStudentWithProfileComponent } from './add-student-with-profile/add-student-with-profile.component';
+import {  HttpClientModule } from '@angular/common/http'
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,14 +25,16 @@ import { ReactiveFormSignupComponent } from './reactive-form-signup/reactive-for
     ListProductComponent,
     EditProductComponent,
     SearchProductComponent,
-    ReactiveFormSignupComponent
+    ReactiveFormSignupComponent,
+    AddStudentWithProfileComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     AlifeFileToBase64Module,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

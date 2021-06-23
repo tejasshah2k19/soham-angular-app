@@ -1,0 +1,8 @@
+<p>add-student-with-profile!</p>
+
+
+StudentNAme : <input type="text" [(ngModel)]="studentName" /><br>
+
+Profile : <input type="file" (change)="uploadFile($event)" /><br>
+
+<input type="button" (click)="saveData()" value="Save"/>
