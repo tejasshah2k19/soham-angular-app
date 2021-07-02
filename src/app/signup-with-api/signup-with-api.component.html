@@ -1,0 +1,27 @@
+<form  [formGroup]="myForm"  (ngSubmit)="saveUser()">
+
+
+    <div>
+        FirstName: <input type="text" formControlName="first_name"/>
+    </div>
+
+    <div>
+        LastName:  <input type="text" formControlName="last_name"/>
+    </div>
+
+
+    <div>
+       Gender:   Male<input type="radio" name="gender" formControlName="gender" value="male"/>
+       Female<input type="radio" name="gender" formControlName="gender" value="female"/>
+    </div>
+
+    <div>
+        Email:  <input type="text" formControlName="email"/>
+    </div>
+
+    <div>
+        Password:  <input type="text" formControlName="password"/>
+    </div>
+
+    <button type="submit" >Signup</button>
+</form>

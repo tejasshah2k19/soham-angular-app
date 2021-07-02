@@ -21,7 +21,7 @@ export class AddStudentWithProfileComponent implements OnInit {
   uploadFile(event:any){
     console.log("upload file()");
     console.log(event.target.files[0]);
-    console.log(event.target.files);
+
     this.file = event.target.files[0];
  
    }

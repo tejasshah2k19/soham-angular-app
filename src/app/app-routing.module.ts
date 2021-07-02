@@ -8,6 +8,7 @@ import { FileUploadComponent } from './file-upload/file-upload.component';
 import { ListProductComponent } from './list-product/list-product.component';
 import { ReactiveFormSignupComponent } from './reactive-form-signup/reactive-form-signup.component';
 import { SearchProductComponent } from './search-product/search-product.component';
+import { SignupWithApiComponent } from './signup-with-api/signup-with-api.component';
 import { SignupComponent } from './signup/signup.component';
 
 const routes: Routes = [
@@ -19,7 +20,8 @@ const routes: Routes = [
   {path:"editproduct/:productId",component:EditProductComponent},
   {path:"searchproduct",component:SearchProductComponent},
   {path:"reactive-form-signup",component:ReactiveFormSignupComponent},
-  {path:"add-student",component:AddStudentWithProfileComponent}
+  {path:"add-student",component:AddStudentWithProfileComponent},
+  {path:"signup-with-api",component:SignupWithApiComponent}
 ];
 
 @NgModule({

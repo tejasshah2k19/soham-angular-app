@@ -14,7 +14,8 @@ import { EditProductComponent } from './edit-product/edit-product.component';
 import { SearchProductComponent } from './search-product/search-product.component';
 import { ReactiveFormSignupComponent } from './reactive-form-signup/reactive-form-signup.component';
 import { AddStudentWithProfileComponent } from './add-student-with-profile/add-student-with-profile.component';
-import {  HttpClientModule } from '@angular/common/http'
+import {  HttpClientModule } from '@angular/common/http';
+import { SignupWithApiComponent } from './signup-with-api/signup-with-api.component'
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,7 +27,8 @@ import {  HttpClientModule } from '@angular/common/http'
     EditProductComponent,
     SearchProductComponent,
     ReactiveFormSignupComponent,
-    AddStudentWithProfileComponent
+    AddStudentWithProfileComponent,
+    SignupWithApiComponent
   ],
   imports: [
     BrowserModule,
