@@ -15,5 +15,11 @@ export class RestApiService {
     return this.httpClient.post(url,data)
   }
 
+  getAllUsers():Observable<any>{
+    let url = "http://restapi2020.herokuapp.com/api/users.json"
+    return this.httpClient.get(url);
+  }
+
+
 }
 

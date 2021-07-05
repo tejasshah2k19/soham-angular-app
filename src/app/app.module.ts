@@ -15,7 +15,8 @@ import { SearchProductComponent } from './search-product/search-product.componen
 import { ReactiveFormSignupComponent } from './reactive-form-signup/reactive-form-signup.component';
 import { AddStudentWithProfileComponent } from './add-student-with-profile/add-student-with-profile.component';
 import {  HttpClientModule } from '@angular/common/http';
-import { SignupWithApiComponent } from './signup-with-api/signup-with-api.component'
+import { SignupWithApiComponent } from './signup-with-api/signup-with-api.component';
+import { ApiListUsersComponent } from './api-list-users/api-list-users.component'
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,7 +29,8 @@ import { SignupWithApiComponent } from './signup-with-api/signup-with-api.compon
     SearchProductComponent,
     ReactiveFormSignupComponent,
     AddStudentWithProfileComponent,
-    SignupWithApiComponent
+    SignupWithApiComponent,
+    ApiListUsersComponent
   ],
   imports: [
     BrowserModule,
