@@ -20,6 +20,28 @@ export class RestApiService {
     return this.httpClient.get(url);
   }
 
+  //delete 
 
+  deleteUserById(id:number):Observable<any>{
+    
+    let url = "http://restapi2020.herokuapp.com/api/users/"+id+".json";
+    return this.httpClient.delete(url);
+  }
+
+  //get single record using id
+
+  getDataById(id:number):Observable<any>{
+    let url ="http://restapi2020.herokuapp.com/api/users/"+id+".json";
+    return this.httpClient.get(url);
+  
+  }
+
+  //update 
+  updateUser(data:any):Observable<any>
+  {
+    let url = "http://restapi2020.herokuapp.com/api/users/"+data.id+".json"
+    return this.httpClient.put(url,data)
+  }
+ 
 }
 

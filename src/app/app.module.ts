@@ -16,7 +16,8 @@ import { ReactiveFormSignupComponent } from './reactive-form-signup/reactive-for
 import { AddStudentWithProfileComponent } from './add-student-with-profile/add-student-with-profile.component';
 import {  HttpClientModule } from '@angular/common/http';
 import { SignupWithApiComponent } from './signup-with-api/signup-with-api.component';
-import { ApiListUsersComponent } from './api-list-users/api-list-users.component'
+import { ApiListUsersComponent } from './api-list-users/api-list-users.component';
+import { ApiEditUserComponent } from './api-edit-user/api-edit-user.component'
 @NgModule({
   declarations: [
     AppComponent,
@@ -30,7 +31,8 @@ import { ApiListUsersComponent } from './api-list-users/api-list-users.component
     ReactiveFormSignupComponent,
     AddStudentWithProfileComponent,
     SignupWithApiComponent,
-    ApiListUsersComponent
+    ApiListUsersComponent,
+    ApiEditUserComponent
   ],
   imports: [
     BrowserModule,

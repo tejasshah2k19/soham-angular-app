@@ -1,0 +1,19 @@
+<form  [formGroup]="myForm"  (ngSubmit)="updateUser()">
+
+
+    <div>
+        FirstName: <input type="text" formControlName="first_name"/>
+    </div>
+
+    <div>
+        LastName:  <input type="text" formControlName="last_name"/>
+    </div>
+
+ 
+    <div>
+        Email:  <input type="text" formControlName="email"/>
+    </div>
+
+  
+    <button type="submit" >Signup</button>
+</form>

@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AddProductComponent } from './add-product/add-product.component';
 import { AddStudentWithProfileComponent } from './add-student-with-profile/add-student-with-profile.component';
+import { ApiEditUserComponent } from './api-edit-user/api-edit-user.component';
 import { ApiListUsersComponent } from './api-list-users/api-list-users.component';
 import { CalcComponent } from './calc/calc.component';
 import { EditProductComponent } from './edit-product/edit-product.component';
@@ -23,7 +24,8 @@ const routes: Routes = [
   {path:"reactive-form-signup",component:ReactiveFormSignupComponent},
   {path:"add-student",component:AddStudentWithProfileComponent},
   {path:"signup-with-api",component:SignupWithApiComponent},
-  {path:"api-list-users",component:ApiListUsersComponent}
+  {path:"api-list-users",component:ApiListUsersComponent},
+  {path:"api-edit-user/:id",component:ApiEditUserComponent}
 ];
 
 @NgModule({

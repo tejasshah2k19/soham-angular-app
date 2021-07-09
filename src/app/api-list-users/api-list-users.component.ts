@@ -21,4 +21,15 @@ export class ApiListUsersComponent implements OnInit {
     
   }
 
+  deleteUser(id:number){
+     this.apiService.deleteUserById(id).subscribe(resp=>{
+    
+      this.apiService.getAllUsers().subscribe(resp=>{
+        this.users = resp;
+      })
+    
+    })
+  }
+
+
 }

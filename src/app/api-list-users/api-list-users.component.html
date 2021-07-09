@@ -6,6 +6,7 @@
         <th>LastName</th>
         <th>Email</th>
         <th>Password</th>
+        <th>Action</th>
     </tr>
 
     <tr *ngFor="let u of users">
@@ -16,6 +17,9 @@
         <td>{{u.last_name}}</td>
         <td>{{u.email}}</td>
         <td>{{u.password}}</td>
+        <td><button (click)="deleteUser(u.id)">Delete</button> | 
+            <a routerLink="/api-edit-user/{{u.id}}">Edit</a>
+        </td>
     
     
     </tr>
