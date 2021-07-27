@@ -8,6 +8,8 @@ import { CalcComponent } from './calc/calc.component';
 import { EditProductComponent } from './edit-product/edit-product.component';
 import { FileUploadComponent } from './file-upload/file-upload.component';
 import { ListProductComponent } from './list-product/list-product.component';
+import { LoginComponent } from './login/login.component';
+import { PrimeTableDemoComponent } from './prime-table-demo/prime-table-demo.component';
 import { ReactiveFormSignupComponent } from './reactive-form-signup/reactive-form-signup.component';
 import { SearchProductComponent } from './search-product/search-product.component';
 import { SignupWithApiComponent } from './signup-with-api/signup-with-api.component';
@@ -25,7 +27,9 @@ const routes: Routes = [
   {path:"add-student",component:AddStudentWithProfileComponent},
   {path:"signup-with-api",component:SignupWithApiComponent},
   {path:"api-list-users",component:ApiListUsersComponent},
-  {path:"api-edit-user/:id",component:ApiEditUserComponent}
+  {path:"api-edit-user/:id",component:ApiEditUserComponent},
+  {path:"prime-table",component:PrimeTableDemoComponent},
+  {path:"",component:LoginComponent}
 ];
 
 @NgModule({

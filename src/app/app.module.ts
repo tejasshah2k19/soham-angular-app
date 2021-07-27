@@ -18,6 +18,10 @@ import {  HttpClientModule } from '@angular/common/http';
 import { SignupWithApiComponent } from './signup-with-api/signup-with-api.component';
 import { ApiListUsersComponent } from './api-list-users/api-list-users.component';
 import { ApiEditUserComponent } from './api-edit-user/api-edit-user.component'
+import {TableModule} from 'primeng/table';
+import { PrimeTableDemoComponent } from './prime-table-demo/prime-table-demo.component';
+import { LoginComponent } from './login/login.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -32,7 +36,9 @@ import { ApiEditUserComponent } from './api-edit-user/api-edit-user.component'
     AddStudentWithProfileComponent,
     SignupWithApiComponent,
     ApiListUsersComponent,
-    ApiEditUserComponent
+    ApiEditUserComponent,
+    PrimeTableDemoComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
@@ -40,7 +46,8 @@ import { ApiEditUserComponent } from './api-edit-user/api-edit-user.component'
     FormsModule,
     AlifeFileToBase64Module,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    TableModule
   ],
   providers: [],
   bootstrap: [AppComponent]
